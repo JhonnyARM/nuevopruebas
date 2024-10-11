@@ -15,7 +15,7 @@ class LoginTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         # Inicializa el driver con las Desired Capabilities
-        cls.driver = webdriver.Remote("http://localhost:4723/wd/hub", get_des_cap())
+        cls.driver = webdriver.Remote("http://hub-cloud.browserstack.com/wd/hub", get_des_cap())
 
 
         cls.driver.implicitly_wait(10)  # Tiempo de espera implícito
